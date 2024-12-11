@@ -1,6 +1,7 @@
 ---
 title: "Welcome to my blog"
 date: 2024-12-12
+layout: post
 ---
 # Create a simple Two-Factor Authentication application with Python Flask, MySQL, Docker and Twilio
 For this quarter (Fall 2023?24? - I'm still so lost about this lol), one class requires students to set up an authentication system with Multi-Factor Authentication. 
