@@ -7,6 +7,15 @@ Email: [honganh3179@gmail.com](mailto:honganh3179@gmail.com)
 LinkedIn: [linkedin.com/in/hongeinh](https://linkedin.com/in/hongeinh)  
 
 ---
+## Blogs
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 
 ## Education
 
@@ -15,6 +24,7 @@ LinkedIn: [linkedin.com/in/hongeinh](https://linkedin.com/in/hongeinh)
 **MS in Computer Science**  
 Cumulative GPA: 4.0/4.0  
 
+- AI/ML and Data Science: Artificial Intelligence for Data Science, Data Mining, Big Data Architecture.
 - Systems: Database Management, Operating System, Computer Networks, Cloud Computing, Distributed Systems  
 
 ---
