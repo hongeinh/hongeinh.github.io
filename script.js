@@ -8,7 +8,7 @@ function loadPage(page) {
             setTimeout(() => {
                 content.innerHTML = data;
                 content.style.opacity = 1; // Fade-in effect
-            }, 300); // Wait for fade-out before replacing content
+            }, 300);
         })
         .catch(error => console.error("Error loading page:", error));
 }
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPage("home.html");
     applyDarkMode();
 });
-
 
 // Dark Mode Toggle
 const darkModeToggle = document.getElementById("darkModeToggle");

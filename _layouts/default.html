@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/hacker.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+    </header>
+
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/pages/blogs.html' | relative_url }}">Blogs</a>
+        <a href="{{ '/pages/projects.html' | relative_url }}">Projects</a>
+        <a href="{{ '/pages/experience.html' | relative_url }}">Experience</a>
+        <a href="{{ '/pages/certificates.html' | relative_url }}">Certificates</a>
+        <a href="{{ '/pages/education.html' | relative_url }}">Education</a>
+        <a href="{{ '/pages/technologies.html' | relative_url }}">Technologies</a>
+        <a href="{{ '/pages/contact.html' | relative_url }}">Contact</a>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+</body>
+</html>
