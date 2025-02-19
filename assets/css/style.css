@@ -121,3 +121,62 @@ input:focus, textarea:focus {
         width: 90%;
     }
 }
+
+/* Global Section Styling */
+h2 {
+    font-size: 1.6rem;
+    color: #00ff00; /* Green heading color */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #00ff00; /* Green color for project titles */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #aaa; /* Light gray for list items */
+}
+
+/* Project Item (Reusable for both Projects and Experiences) */
+.project-item {
+    background: #222; /* Dark background for each item */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between items */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1); /* Green glow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); /* Hover effect for glow */
+}
+
+/* Link Styling (for Projects) */
+.project-item a {
+    color: #00ff00; /* Green color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+    color: #ff4081; /* Pink color on hover */
+}
