@@ -1,37 +1,123 @@
-/* Dark Mode tweaks */
+/* Global Styling */
 body {
-    background: #0d1117;
-    color: #f0f0f0;
+    background: #000000; /* Black background for hacker theme */
+    color: #00ff00; /* Neon green text color */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
 }
 
+/* Links Styling */
 a {
-    color: #0af;
+    color: #00ff00; /* Green links */
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
-    color: #ff4081;
+    color: #ff4081; /* Pinkish hover effect */
 }
 
 /* Avatar Styling */
 .avatar {
-    width: 100px;
+    width: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #0af;
+    border: 3px solid #00ff00; /* Green border for avatar */
 }
 
 /* Navbar Styling */
 nav {
-    background: #222;
-    padding: 10px;
+    background: #222222; /* Dark gray background for navbar */
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
-    color: #0af;
+    color: #00ff00; /* Green text for navbar items */
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-size: 18px;
 }
 
 nav a:hover {
-    color: #ff4081;
+    color: #ff4081; /* Hover effect with a light pink */
+}
+
+/* Button Styling */
+button {
+    background-color: #00ff00; /* Green background for buttons */
+    color: #000000; /* Black text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00b300; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background: #121212; /* Darker background */
+    color: #00ff00; /* Green text for dark mode */
+}
+
+/* Content Sections */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #1c1c1c; /* Slightly lighter gray background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode main {
+    background: #222222; /* Darker content background for dark mode */
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 10px;
+    color: #00ff00;
+}
+
+/* Form Elements */
+input, textarea {
+    background: #222222;
+    color: #00ff00;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff4081;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    main {
+        width: 90%;
+    }
 }
