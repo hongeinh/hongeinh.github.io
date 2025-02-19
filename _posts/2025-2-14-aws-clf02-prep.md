@@ -1,3 +1,8 @@
+---
+layout: default
+date: 2025-2-14
+title: "AWS CLF-02 Preparation"
+---
 # How I prepared for my AWS Cloud Practitioner certificate
 
 ## Resources
