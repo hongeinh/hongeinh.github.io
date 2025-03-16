@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<img src="images/avatar.jpg" alt="avatar" class="avatar">
+<!-- <img src="images/avatar.jpg" alt="avatar" class="avatar"> -->
 
 # Welcome to Hongeinh's Nest
 _Where I showcase my projects and thoughts._
