@@ -3,7 +3,7 @@ description: Where Hongeinh shows her stuffs
 
 lsi: false
 safe: true
-source: /
+source: /usr/src/app
 incremental: false
 highlighter: rouge
 gist:
@@ -15,3 +15,16 @@ kramdown:
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+exclude:
+  - /proc
+  - /dev
+  - /sys
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .git
+  - .gitignore
+  - .dockerignore
+  - Dockerfile
+  - run.sh
+  - _site

@@ -1,8 +1,8 @@
 /* Global Styling */
 body {
-    background: #000000;
+    background: #0b1a30;
     /* Black background for hacker theme */
-    color: #00ff00;
+    color: #7dffdc;
     /* Neon green text color */
     font-family: 'Courier New', Courier, monospace;
     /* Monospace font */
@@ -14,7 +14,7 @@ body {
 
 /* Links Styling */
 a {
-    color: #00ff00;
+    color: #7dffdc;
     /* Green links */
     text-decoration: none;
     transition: color 0.3s;
@@ -30,7 +30,7 @@ a:hover {
     width: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #00ff00;
+    border: 3px solid #7dffdc;
     /* Green border for avatar */
 }
 
@@ -43,7 +43,7 @@ nav {
 }
 
 nav a {
-    color: #00ff00;
+    color: #7dffdc;
     /* Green text for navbar items */
     text-decoration: none;
     margin: 0 15px;
@@ -57,7 +57,7 @@ nav a:hover {
 
 /* Button Styling */
 button {
-    background-color: #00ff00;
+    background-color: #7dffdc;
     /* Green background for buttons */
     color: #000000;
     /* Black text */
@@ -80,7 +80,7 @@ button:hover {
 .dark-mode {
     background: #121212;
     /* Darker background */
-    color: #00ff00;
+    color: #7dffdc;
     /* Green text for dark mode */
 }
 
@@ -106,16 +106,16 @@ main {
 footer {
     background: #111;
     padding: 10px;
-    color: #00ff00;
+    color: #7dffdc;
 }
 
 /* Form Elements */
 input,
 textarea {
     background: #222222;
-    color: #00ff00;
+    color: #7dffdc;
     padding: 10px;
-    border: 2px solid #00ff00;
+    border: 2px solid #7dffdc;
     border-radius: 5px;
     width: 100%;
     font-size: 16px;
@@ -144,16 +144,16 @@ textarea:focus {
 /* Global Section Styling */
 h2 {
     font-size: 1.6rem;
-    color: #00ff00;
+    color: #7dffdc;
     /* Green heading color */
     margin-bottom: 20px;
-    border-bottom: 2px solid #00ff00;
+    border-bottom: 2px solid #7dffdc;
     padding-bottom: 10px;
 }
 
 h3 {
     font-size: 1.3rem;
-    color: #00ff00;
+    color: #7dffdc;
     /* Green color for project titles */
     margin-bottom: 10px;
     text-align: left;
@@ -197,7 +197,7 @@ ul li {
 
 /* Link Styling (for Projects) */
 .project-item a {
-    color: #00ff00;
+    color: #7dffdc;
     /* Green color for links */
     text-decoration: none;
     font-weight: bold;
@@ -230,7 +230,7 @@ ul li {
 
 /* Certificate Link Styling */
 .certificate-link {
-    color: #00ff00;
+    color: #7dffdc;
     /* Green color for links */
     text-decoration: none;
     font-weight: bold;
