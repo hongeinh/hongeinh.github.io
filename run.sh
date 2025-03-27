@@ -9,4 +9,4 @@ docker build -t portfolio .
 docker run -it --rm -p 4000:4000 -v $(pwd):/usr/src/app portfolio
 
 # Windows
-docker run -d --rm -p 4000:4000 -v ${PWD}:/usr/src/app portfolio
+docker run -d --rm --name portfolio -p 4000:4000 -v ${PWD}:/usr/src/app portfolio

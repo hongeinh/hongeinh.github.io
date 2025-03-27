@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Authentication App with Flask Python (Part 1)"
 date: 2024-12-11
 ---

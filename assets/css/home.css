@@ -1,0 +1,85 @@
+#fractal-tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Style the canvas */
+canvas {
+    display: block;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links a {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.about-me {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-me p {
+    margin: 10px 0;
+}
+
+.about-me-skills {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p,
+ul,
+li {
+    font-family: "Nunito", "Comic Neue", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: #e0e0e0;
+    /* Softer white for body text */
+}
+
+.about-me-skills {
+    list-style: none;
+    /* Remove default bullets */
+    padding: 0;
+    margin: 10px 0;
+}
+
+.about-me-skills li {
+    position: relative;
+    padding-left: 25px;
+    /* Space for the arrow icon */
+    margin: 0;
+    /* Spacing between list items */
+    font-size: 18px;
+    color: #7dffdc;
+    /* Green text to match the hacker theme */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-skills li::before {
+    content: "\f061";
+    /* Font Awesome arrow-right icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    /* Solid style for the icon */
+    position: absolute;
+    left: 0;
+    color: #fff;
+    /* White arrow to match the theme */
+    font-size: 14px;
+    /* Smaller icon size */
+    margin-right: 5px;
+    /* Space between icon and text */
+}

@@ -4,11 +4,12 @@ body {
     /* Black background for hacker theme */
     color: #7dffdc;
     /* Neon green text color */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Fredoka One", "Nunito", "Comic Neue", sans-serif;
     /* Monospace font */
     margin: 0;
     padding: 0;
     text-align: center;
+    justify-content: center;
     transition: background 0.3s, color 0.3s;
 }
 
