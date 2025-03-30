@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
+
 <body>
     <header>
         <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
@@ -14,7 +16,7 @@
 
     <nav>
         <a href="{{ '/' | relative_url }}">About me</a>
-        
+
         <a href="{{ '/pages/blogs.html' | relative_url }}">Blogs</a>
         <a href="{{ '/pages/projects.html' | relative_url }}">Projects</a>
         <a href="{{ '/pages/experience.html' | relative_url }}">Experience</a>
@@ -28,4 +30,5 @@
         {{ content }}
     </main>
 </body>
+
 </html>

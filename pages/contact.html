@@ -3,17 +3,23 @@ layout: default
 title: Contact
 ---
 
-<p>Feel free to reach out via email or submit a message below:</p>
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin: auto; padding: 20px; max-width: 600px;">
+    <h1>Contact Me</h1>
 
-<form action="https://formspree.io/f/xgvorzao" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <form action="https://formspree.io/f/xgvorzao" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="_replyto" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-    <button type="submit">Send Message</button>
-</form>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<style>
+    
+</style>
