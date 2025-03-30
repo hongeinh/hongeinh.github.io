@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Compare Cloud Server Options"
+date: 2025-03-30
+---
 # Compare Cloud Server Options
 This is a comprehensive comparison of the various cloud server options available.  
 ## Criteria for Selection
