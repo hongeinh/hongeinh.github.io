@@ -75,16 +75,3 @@ This is a comprehensive comparison of the various cloud server options available
 | DigitalOcean   | Firewalls, load balancers, SSH       | $5/month (25 GB SSD)  | Developer-focused servers  |
 | Hetzner        | DDoS protection, GDPR compliance     | $5/month (40 GB SSD)  | Cheap cloud VMs            |
 | Microsoft Azure| DDoS protection, global compliance   | $100 student credit   | Students, AI experimentation|
-
-### Recommendations
-- **For Secure Storage on a Budget**: Go with **Internxt** or **Hivenet**. Internxt’s zero-knowledge encryption and $11/year plan make it the best value for secure storage, while Hivenet’s distributed model offers a unique security approach at a low cost.
-- **For Hosting a Full-Stack App**: Choose **DigitalOcean** or **Hetzner**. Both are developer-friendly and start at $5/month, with DigitalOcean offering a free trial and Hetzner providing slightly more resources for the price. They’re secure enough for most projects, though you’ll need to configure some security features yourself.
-- **For a Student with AI Interests**: Use **Microsoft Azure** to take advantage of the $100 student credit. It’s secure, supports your tech stack, and offers AI tools for experimentation.
-- **For Maximum Security**: If security is your top priority (e.g., for sensitive user data), **Sync.com** is the best choice due to its zero-knowledge encryption and robust privacy features, though it’s slightly more expensive than Internxt.
-
-### Additional Notes
-- **Free Tiers**: If you’re open to free options, MEGA offers 20 GB of free storage with zero-knowledge encryption, which could be a good starting point for small projects.
-- **Scalability**: DigitalOcean and Hetzner are better for scaling up as your projects grow, aligning with your DevOps interest. Storage-focused services like Internxt and Hivenet are less flexible for hosting applications.
-- **Critical Perspective**: While these providers are praised for security, no cloud service is immune to breaches. For example, even AWS, a leader in cloud computing, has had incidents in the past (though none major since 2006). Always maintain local backups and use strong, unique passwords with 2FA to mitigate risks.
-
-Let me know if you’d like to dive deeper into any of these providers or explore how to deploy your Svelte/FastAPI app on one of them!
