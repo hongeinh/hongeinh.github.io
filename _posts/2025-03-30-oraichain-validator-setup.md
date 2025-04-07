@@ -81,10 +81,10 @@ runcmd:
 ```
 
 ## 3. Install necessary packages
-### 3.0. Login to the server
+### 3.0. Login to the server and attach volume
 - `ssh hongeinh@<server ip>`. Add passphrase when prompted, if any. 
 - Login as root user: `sudo su -`
-
+- Go to the project -> Volume tab > Choose your volume > Show configuration. Hetzner will guide you through the process of attaching the volume to the server.
 
 ### 3.1. Install Go 
 Required version: >= 1.22.3
