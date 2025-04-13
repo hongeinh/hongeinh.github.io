@@ -231,3 +231,22 @@ sudo systemctl daemon-reload
 sudo systemctl start orai
 sudo systemctl enable orai
 ```
+
+## 4. Create a validator
+
+## 5. Miscellaneous
+### 5.1. Log rotation for oraid service
+Cosmovisor writes to journalctl by default. To check the log size `journalctl --disk-usage`. To edit journalctl settings, run `sudo vim /etc/systemd/journald.conf` and set the following limits:
+```conf
+SystemMaxUse=500M         # Max total space journal logs can use
+SystemKeepFree=100M       # Leave this much space free on disk
+SystemMaxFileSize=100M    # Max size per journal file
+SystemMaxFiles=5          # Number of rotated files to keep
+```  
+Then, run `sudo systemctl restart systemd-journald` to apply the changes.
+
+We can manually rotate the logs by running:
+```bash
+sudo journalctl --vacuum-time=7d     # keep only 7 days of logs
+sudo journalctl --vacuum-size=500M   # keep only 500MB max
+```
