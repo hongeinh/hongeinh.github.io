@@ -354,3 +354,31 @@ sudo systemctl enable grafana-server
 sudo systemctl status grafana-server
 sudo ufw allow 3000
 ```
+
+Open 26656 for p2p connection
+
+### 5.3. Add swap memory
+Swap space is like backup RAM on your disk. When your system runs out of physical RAM, it starts moving inactive memory pages (background processes, unused app data, etc.) to swap space so it can free up RAM for more active tasks.  
+1. Check if you already have swap `swapon --show`. To see total swap space use `free -h`.
+2. Add swap space:
+```bash
+# 1. Create a 2GB swap file
+sudo fallocate -l 2G /swapfile
+# 2. Secure it (only root should access)
+sudo chmod 600 /swapfile
+# 3. Format it as swap
+sudo mkswap /swapfile
+# 4. Enable the swap
+sudo swapon /swapfile
+# 5. Verify it's active
+swapon --show
+```  
+3. Tune swap behavior:
+```bash
+# Show current value
+cat /proc/sys/vm/swappiness
+# Set to 10 (good for performance systems)
+echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.conf
+# Apply it immediately
+sudo sysctl -p
+```
