@@ -241,18 +241,18 @@ oraid keys list
 oraid tendermint show-validator --home $ORAI_HOME/.oraid
 ```
 
-3. Create a `validator.json` file (anywhere in your desired directory)
+3. Create a `validator.json` file (anywhere in your desired directory). I put it in my ORAI_HOME directory
 ```json
 {
-    "pubkey": {"@type":"/cosmos.crypto.ed25519.PubKey","key":"769rBqeXaiOvG00FLWV2IcgCIOUxo9mPmF1C9ab2cCg="},
+    "pubkey": <output from previous command>,
     "amount": "1000000orai",
-    "moniker": "myvalidator",
+    "moniker": "hongeinh",
     "identity": "optional identity signature (ex. UPort or Keybase)",
-    "website": "validator's (optional) website",
+    "website": "None",
     "security": "validator's (optional) security contact email",
     "details": "validator's (optional) details",
-    "commission-rate": "0.1",
-    "commission-max-rate": "0.2",
+    "commission-rate": "0.05",
+    "commission-max-rate": "0.1",
     "commission-max-change-rate": "0.01",
     "min-self-delegation": "1"
 }
@@ -269,3 +269,34 @@ Edit the file with your actual validator details:
 - **`min-self-delegation`**: Minimum self-delegation (e.g., `1` ORAI).
 - **`website`**: (Optional) Your validator's website.
 - **`details`**: (Optional) Additional validator information.
+
+
+```bash
+oraid tx staking create-validator $ORAI_HOME/validator.json \
+--from <wallet name> \
+--chain-id="Oraichain" \
+--gas="auto" \
+--gas-prices="0.001orai" \
+--gas-adjustment="1.3" \
+--node https://rpc.orai.io 
+```
+
+Edit stuffs
+```bash
+oraid tx staking edit-validator \
+--chain-id Oraichain \
+--from <wallet name> \
+--website "None" \
+--gas="auto" \
+--gas-prices="0.001orai" \
+--gas-adjustment=1.4 \
+--node https://rpc.orai.io -y
+```
+
+
+
+### 4.1. Track validator
+```bash
+oraid query slashing signing-info $(oraid tendermint show-validator --home $ORAI_HOME/.oraid)
+```
+
