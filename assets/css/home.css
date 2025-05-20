@@ -2,84 +2,95 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
 /* Optional: Style the canvas */
 canvas {
     display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .contact-links {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px 0;
+    gap: 25px;
 }
 
 .contact-links a {
-    margin: 0 10px;
-    font-size: 24px;
+    font-size: 28px;
+    color: #c04e9e;
+    transition: all 0.3s ease;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-links a:hover {
+    color: #f694e7;
+    transform: scale(1.1) rotate(5deg);
+    background: white;
 }
 
 .about-me {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(145, 171, 237, 0.1));
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .about-me p {
-    margin: 10px 0;
+    margin: 15px 0;
+    color: #333333;
+    font-size: 1.1rem;
 }
 
 .about-me-skills {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-}
-
-p,
-ul,
-li {
-    font-family: "Nunito", "Comic Neue", sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    color: #e0e0e0;
-    /* Softer white for body text */
-}
-
-.about-me-skills {
-    list-style: none;
-    /* Remove default bullets */
-    padding: 0;
-    margin: 10px 0;
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
 }
 
 .about-me-skills li {
     position: relative;
-    padding-left: 25px;
-    /* Space for the arrow icon */
-    margin: 0;
-    /* Spacing between list items */
-    font-size: 18px;
-    color: #7dffdc;
-    /* Green text to match the hacker theme */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(135deg, #3ba195, #3aae57);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.about-me-skills li:nth-child(3n+1) {
+    background: linear-gradient(135deg, #c04e9e, #f694e7);
+}
+
+.about-me-skills li:nth-child(3n+2) {
+    background: linear-gradient(135deg, #db3e11, #f75408);
+}
+
+.about-me-skills li:hover {
+    transform: translateY(-3px) rotate(2deg);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
 .about-me-skills li::before {
-    content: "\f061";
-    /* Font Awesome arrow-right icon */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    /* Solid style for the icon */
-    position: absolute;
-    left: 0;
-    color: #fff;
-    /* White arrow to match the theme */
-    font-size: 14px;
-    /* Smaller icon size */
-    margin-right: 5px;
-    /* Space between icon and text */
+    content: "✨";
+    margin-right: 8px;
+    color: #fdc500;
 }

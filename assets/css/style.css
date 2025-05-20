@@ -1,11 +1,8 @@
 /* Global Styling */
 body {
-    background: #0b1a30;
-    /* Black background for hacker theme */
-    color: #7dffdc;
-    /* Neon green text color */
+    background: linear-gradient(135deg, #fbede2, #f9f5f2);
+    color: #3ba195;
     font-family: "Fredoka One", "Nunito", "Comic Neue", sans-serif;
-    /* Monospace font */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -15,15 +12,13 @@ body {
 
 /* Links Styling */
 a {
-    color: #7dffdc;
-    /* Green links */
+    color: #c04e9e;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #ff4081;
-    /* Pinkish hover effect */
+    color: #f694e7;
 }
 
 /* Avatar Styling */
@@ -31,50 +26,45 @@ a:hover {
     width: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #7dffdc;
-    /* Green border for avatar */
+    border: 3px solid #f8abe7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Navbar Styling */
 nav {
-    background: #222222;
-    /* Dark gray background for navbar */
+    background: linear-gradient(135deg, #3ba195, #3aae57);
     padding: 15px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-    color: #7dffdc;
-    /* Green text for navbar items */
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
 }
 
 nav a:hover {
-    color: #ff4081;
-    /* Hover effect with a light pink */
+    color: #fdc500;
 }
 
 /* Button Styling */
 button {
-    background-color: #7dffdc;
-    /* Green background for buttons */
-    color: #000000;
-    /* Black text */
+    background: linear-gradient(135deg, #db3e11, #f75408);
+    color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
     transition: transform 0.2s ease, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #00b300;
-    /* Darker green on hover */
+    background: linear-gradient(135deg, #f75408, #db3e11);
     transform: scale(1.05);
-    /* Slight zoom effect */
 }
 
 /* Dark Mode Styling */
@@ -90,11 +80,15 @@ main {
     max-width: 900px;
     margin: 20px auto;
     padding: 30px;
-    background: #1c1c1c;
-    /* Slightly lighter gray background for content */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.2);
-    transition: background 0.3s, box-shadow 0.3s;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+main:hover {
+    transform: translateY(-2px);
 }
 
 .dark-mode main {
@@ -105,26 +99,29 @@ main {
 
 /* Footer */
 footer {
-    background: #111;
+    background: linear-gradient(135deg, #91abed, #f694e7);
     padding: 10px;
-    color: #7dffdc;
+    color: white;
 }
 
 /* Form Elements */
 input,
 textarea {
-    background: #222222;
-    color: #7dffdc;
-    padding: 10px;
-    border: 2px solid #7dffdc;
-    border-radius: 5px;
+    background: white;
+    color: #3ba195;
+    padding: 12px;
+    border: 2px solid #f8abe7;
+    border-radius: 12px;
     width: 100%;
     font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 input:focus,
 textarea:focus {
-    border-color: #ff4081;
+    border-color: #c04e9e;
+    box-shadow: 0 0 8px rgba(246, 148, 231, 0.3);
+    outline: none;
 }
 
 /* Responsive Design */
@@ -145,24 +142,22 @@ textarea:focus {
 /* Global Section Styling */
 h2 {
     font-size: 1.6rem;
-    color: #7dffdc;
-    /* Green heading color */
+    color: #c04e9e;
     margin-bottom: 20px;
-    border-bottom: 2px solid #7dffdc;
+    border-bottom: 2px solid #f8abe7;
     padding-bottom: 10px;
 }
 
 h3 {
     font-size: 1.3rem;
-    color: #7dffdc;
-    /* Green color for project titles */
+    color: #3ba195;
     margin-bottom: 10px;
     text-align: left;
 }
 
 p {
     font-size: 1rem;
-    color: #fff;
+    color: #333333;
     margin: 5px 0;
 }
 
@@ -174,87 +169,72 @@ ul {
 
 ul li {
     font-size: 1rem;
-    color: #aaa;
-    /* Light gray for list items */
+    color: #333333;
 }
 
-/* Project Item (Reusable for both Projects and Experiences) */
+/* Project Item Styling */
 .project-item {
-    background: #222;
-    /* Dark background for each item */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 171, 231, 0.1));
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 20px;
-    /* Space between items */
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
-    /* Green glow effect */
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .project-item:hover {
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
-    /* Hover effect for glow */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(248, 171, 231, 0.1), rgba(255, 255, 255, 0.9));
 }
 
-/* Link Styling (for Projects) */
-.project-item a {
-    color: #7dffdc;
-    /* Green color for links */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.project-item a:hover {
-    color: #ff4081;
-    /* Pink color on hover */
-}
-
-
+/* Certificate Item Styling */
 .certificate-item {
-    background: #222;
-    /* Dark background for each item */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(145, 171, 237, 0.1));
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 20px;
-    /* Space between items */
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
-    /* Green glow effect */
-    transition: box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .certificate-item:hover {
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
-    /* Hover glow effect */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(145, 171, 237, 0.1), rgba(255, 255, 255, 0.9));
 }
-
 
 /* Certificate Link Styling */
 .certificate-link {
-    color: #7dffdc;
-    /* Green color for links */
+    color: #c04e9e;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .certificate-link:hover {
-    color: #ff4081;
-    /* Pink color on hover */
+    color: #f694e7;
 }
 
 /* Certificate Image Styling */
 .certificate-image {
     max-width: 120px;
-    /* Control the size of the image */
     height: auto;
     margin-top: 10px;
     border-radius: 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid #91abed;
+    transition: all 0.3s ease;
 }
 
+.certificate-image:hover {
+    transform: scale(1.05);
+    border-color: #f694e7;
+}
 
 .blog-post,
 .content,
